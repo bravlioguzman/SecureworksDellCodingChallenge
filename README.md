@@ -112,7 +112,8 @@ NOTE: For simplicity purposes, I did not use any tool or framework other than th
 
 * Text file will be called LongestWordsInEnglish.txt. If the user wants to add different data to the file, as long as it keeps the same name the application should read it.
 * There is one specific test case that checks the size of the file. Since the requirements do not specify the size, the assumption is that the file is no bigger than 1 gigabyte.
-* There is one specific test case that checks the extension of the file. Since the requirements do not specify the file extension, the assumption is that the file will be a simple text file. 
+* There is one specific test case that checks the extension of the file. Since the requirements do not specify the file extension, the assumption is that the file will be a simple text file.
+* There is one specific test case which checks specifically for the string returned to only have letters and/or numbers. Since the requirements did not specify what type of characters the text file should have, there is an assumption done that the file would only have alphanumeric characters.
 * If there are 2 or more words that have the same length and have been identified as the largest words within the file, the application will return the FIRST word identified as the longest word in the file. 
 * In case the user wants to run this coding challenge in Windows, the steps should be very similar as the ones provided above:
   1) Install Python by following the steps provided on this site: https://www.python.org/downloads/windows/
