@@ -119,4 +119,4 @@ NOTE: For simplicity purposes, I did not use any tool or framework other than th
   1) Install Python by following the steps provided on this site: https://www.python.org/downloads/windows/
   2) Install pytest by following the steps provided on this site: https://docs.pytest.org/en/stable/getting-started.html
   3) Download all the files provided in the same directory as instructed in Step 4
-  4) Run the coding challenge should and the test cases should be very similar using the same commands as provided in Step 5, the only difference would be to use the command prompt terminal for Windows.
+  4) Running the coding challenge and the test cases should be very similar using the same commands as provided in Step 5, the only difference would using the command prompt terminal for Windows.
