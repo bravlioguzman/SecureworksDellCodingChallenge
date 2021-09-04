@@ -68,9 +68,9 @@ The user should see a similar output like this:
 3. MacOS terminal
 Note: This coding challenge was created using a macOS environment. This provides simplicity to the coding challenge since the user can run the coding challenge and its test cases from the terminal. No need for an IDE or any other platform (e.g. Visual Studio Code). 
 
-NOTE: If the user has experience using Python and pytest, the user cand find easier ways to install this technology. 
+NOTE: If the user has experience using Python and pytest, the user can find different ways to install this technology. 
 For example, pytest can be easily installed by running this command "pip install pytest" in the command line. 
-The steps above were created to provide the most basic recommendations to install the required technology.
+Please keep in mind that these details were created to provide the most basic recommendations to install the required technology.
 
 =====================================================
 
