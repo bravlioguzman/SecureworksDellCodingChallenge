@@ -45,7 +45,7 @@ https://docs.python-guide.org/starting/install3/osx/
 Note: To check if Python has been installed, please run this command.
 If  it's installed, the user will see a similar output to this:
 
-	$ python3 --version 
+	$ python3 --version (or $python, this depends on how users have their own environment setup)
 	
 The user should see a similar output like this:
 	
