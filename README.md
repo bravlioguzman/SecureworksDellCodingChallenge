@@ -79,7 +79,7 @@ Please keep in mind that these details were created to provide the most basic re
 For simplicity purposes, the coding challenge and its test cases have been designed to be run by having all the files in the same folder. Therefore, please extract files from git repository and store them in a single folder.
 For example, if the user wishes to extract the files in the Desktop, the user should see something like this once this is done:
 
-/Users/<user_name>/Desktop/<folder_created_by_user>/LongestWordsInEnglish.txt
+/Users/<user_name>/Desktop/<folder_created_by_user>/Words.txt
 	
 /Users/<user_name>/Desktop/<folder_created_by_user>/Transpose.py
 	
@@ -108,7 +108,7 @@ NOTE: For simplicity purposes, I did not use any tool or framework other than th
 
 * User is running the coding challenge and the test cases in a MacOS environment.
 * User has placed the files inside the same folder created by the user.
-* test (i.e. LongestWordsInEnglish.txt) Text File exists inside the same folder as the other files created by the user.
+* test (i.e. Words.txt) Text File exists inside the same folder as the other files created by the user.
 
 =====================================================
 
