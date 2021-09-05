@@ -36,8 +36,8 @@ In order to run this application, the user needs:
 
 **3) RECOMMENDATIONS**
 
-For simplicity purposes, the coding challenge and its test cases have been designed to be run by having all the files in the same folder. Therefore, please extract files from git repository and store them in a single folder.
-For example, if the user wishes to extract the files in the Desktop, the user should see something like this once this is done:
+For simplicity purposes, the coding challenge and its test cases have been designed to be run by having all the files in the same folder. Therefore, please extract files (clone) from git repository and store them in a single folder.
+For example, if the user wishes to extract the files in the Desktop, the user should see something like this:
 
 /Users/<user_name>/Desktop/<folder_created_by_user>/Words.txt
 	
@@ -67,9 +67,9 @@ The user should see a similar output like this:
 	
 	$ Python 3.9.5 (User might have a different version, as long as it is Python 3 the coding challenge should work) 
 	
-After the user has verified that has Python 3 on the machine, please follow these instructions:
+After the user has verified that Python 3 is installed on the machine, please follow these instructions:
 
-1) Go to the directory where the user downloaded the files from the git repository. Following the directions on Step 3, run this command to go to that directory in the terminal:
+1) Go to the directory where the user cloned the files from the git repository. Following the directions on Step 3, run this command to go to that directory in the terminal:
 
 		cd /Users/<user_name>/Desktop/<folder_created_by_user>
 		
@@ -99,7 +99,7 @@ Note: Make sure that before running any of these commands you are located in the
 	
 	``$python3 Transpose.py Words.txt``
 	
-	The script will take any text file as an argument; therefore, if users want to run their own file, they only need to pass it as a parameter in the command line, like this:
+	The script will take any valid text file as an argument; therefore, if users want to run their own file, they only need to pass it as a parameter in the command line, like this:
 	
 	``$python3 Transpose.py <your_own_text_file_name>.txt``
 	
@@ -113,15 +113,15 @@ NOTE: For simplicity purposes, I did not use any tool or framework other than th
 	
 **6) ASSUMPTIONS IN GENERAL**
 
-* User is running the coding challenge and the test cases in a MacOS environment.
-* User has placed the files inside the same folder created by the user.
+* User is running the coding challenge and the test cases in a macOS environment.
+* User has placed all the files inside the same folder created by the user.
 * test (i.e. Words.txt) Text File exists inside the same folder as the other files created by the user.
 
 =====================================================
 
 **7) ASSUMPTIONS ABOUT CODING CHALLENGE**
 
-* Text file will be called Words.txt. If the user wants to use a different file, please removed the original file and rename the new file to Words.txt
+* Test text file will be called Words.txt. This file is specifically used to run the test cases. If the user wants to use a different file, please remove the original file, rename the new file to Words.txt and run the test cases again. 
 * There is one specific test case that checks the size of the file. Since the requirements do not specify the size, the assumption is that the file is no bigger than 1 gigabyte.
 * There is one specific test case that checks the extension of the file. Since the requirements do not specify the file extension, the assumption is that the file will be a simple text file.
 * There is one specific test case which checks specifically for the string returned to only have letters and/or numbers. Since the requirements did not specify what type of characters the text file should have, there is an assumption done that the file would only have alphanumeric characters.
