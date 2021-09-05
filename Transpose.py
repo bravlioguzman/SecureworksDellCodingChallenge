@@ -24,7 +24,7 @@ def longest_word_and_transpose(filename):
       return str_transposed
    except Exception as e:
       print(e)
-      print("Invalid text format, please make sure to pass a valid text file")
+      print("Invalid file format, please make sure to pass a valid text file")
 
 
 def main():
