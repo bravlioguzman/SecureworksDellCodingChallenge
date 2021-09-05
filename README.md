@@ -9,7 +9,7 @@ QA Automation Engineer Coding Challenge
 
 **4) SET UP ENVIRONMENT TO RUN SCRIPTS**
 
-**5) HOW TO RUN AND COMPILE JAVA CLASS AND TEST CLASS**
+**5) HOW TO RUN THE CODING CHALLENGE AND TEST CASES**
 
 **6) ASSUMPTIONS IN GENERAL**
 
@@ -69,6 +69,10 @@ The user should see a similar output like this:
 	
 After the user has verified that has Python 3 on the machine, please follow these instructions:
 
+1) Go to the directory where the user downloaded the files from the git repository. Following the directions on Step 3, run this command to go to that directory in the terminal:
+
+		cd /Users/<user_name>/Desktop/<folder_created_by_user>
+		
 1) Create an environment by running this command in the terminal:
 
 		python3 -m venv venv
@@ -77,7 +81,7 @@ After the user has verified that has Python 3 on the machine, please follow thes
 
 		source venv/bin/activate
 
-3) Install the requirements file provided in the repository
+3) Install the requirements file provided in the repository by running this command in the terminal:
 
 		pip install -r requirements.txt
 
@@ -89,7 +93,7 @@ Optional: The user might see a warning stating that the environment has an old v
 
 **5) HOW TO RUN THE CODING CHALLENGE AND TEST CASES**
 
-Note: Make sure that before running any of these commands you are located in the terminal inside the folder where all the files from Step 4 were stored.
+Note: Make sure that before running any of these commands you are located in the terminal inside the folder where all the files from Step 3 were stored.
 
 Once the user has verified that Python and pytest have been installed on the machine, please follow these steps:
 1. Run the Coding Challenge by running this command in the command line:
@@ -122,5 +126,6 @@ NOTE: For simplicity purposes, I did not use any tool or framework other than th
 * In case the user wants to run this coding challenge in Windows, the steps should be very similar as the ones provided above:
   1) Install Python by following the steps provided on this site: https://www.python.org/downloads/windows/
   2) Install pytest by following the steps provided on this site: https://docs.pytest.org/en/stable/getting-started.html
-  3) Download all the files provided in the same directory as instructed in Step 5
-  4) Running the coding challenge and the test cases should be very similar using the same commands as provided in Step 6, the only difference would using the command prompt terminal for Windows.
+  3) Download all the files provided in the same directory as instructed in Step 3
+  4) Running the coding challenge and the test cases should be very similar following the instructions in Step 5 by using the command prompt terminal for Windows.
+	
