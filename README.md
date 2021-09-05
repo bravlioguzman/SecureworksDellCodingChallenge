@@ -95,7 +95,6 @@ Optional: The user might see a warning stating that the environment has an old v
 
 Note: Make sure that before running any of these commands you are located in the terminal inside the folder where all the files from Step 3 were stored.
 
-Once the user has verified that Python and pytest have been installed on the machine, please follow these steps:
 1. Run the Coding Challenge by running this command in the command line:
 	
 	``$python3 Transpose.py``
