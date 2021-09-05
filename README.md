@@ -114,7 +114,7 @@ NOTE: For simplicity purposes, I did not use any tool or framework other than th
 
 **7) ASSUMPTIONS ABOUT CODING CHALLENGE**
 
-* Text file will be called Words.txt. If the user wants to use her/his own file, as long as it rename the file to Words.txt, the application should read it.
+* Text file will be called Words.txt. If the user wants to use her/his own file, as long as the user renames the file to Words.txt, the application should read it.
 * There is one specific test case that checks the size of the file. Since the requirements do not specify the size, the assumption is that the file is no bigger than 1 gigabyte.
 * There is one specific test case that checks the extension of the file. Since the requirements do not specify the file extension, the assumption is that the file will be a simple text file.
 * There is one specific test case which checks specifically for the string returned to only have letters and/or numbers. Since the requirements did not specify what type of characters the text file should have, there is an assumption done that the file would only have alphanumeric characters.
