@@ -3,26 +3,9 @@
 #File: Transpose.py
 
 import os
+import sys
 from functools import reduce
-
-# Just reading and printing the original file for testing purposes
-if os.path.exists("Words.txt") == 0:
-    print("File \"Words.txt\" does not exist")
-    exit()
-elif os.path.getsize("Words.txt") <= 0:
-    print("Looks like file is empty. Please add words to the file")
-    exit()
-else:    
-    my_file = open("Words.txt", "r", encoding="utf-8")
-    print("##########################")
-    print("Reading the original file:")
-    print("##########################")
-    print(" ")
-    print(my_file.read())
-    print("##########################")
-    print("End of original file")
-    print("##########################")
-    my_file.close()
+from pathlib import Path
 
 # Making a function to read the file and transpose it
 # Loop and read the list of strings in the file
@@ -40,7 +23,20 @@ def longest_word_and_transpose(filename):
    return str_transposed
 
 def main():
-    longest_word_and_transpose("Words.txt")
+   if len(sys.argv) < 2 or os.path.exists(sys.argv[1]) == 0:
+      print("Text File does not exist") 
+      exit(0)
+
+   elif os.path.getsize(sys.argv[1]) <= 0:
+      print("Looks like the file is empty, please add words to the file")
+      exit(0)
+
+   elif Path(sys.argv[1]).suffix != '.txt':
+      print("The file must be a text file. Example \"filename.txt\"")
+      exit(0)
+
+   else:
+      longest_word_and_transpose(sys.argv[1])
 
 if __name__ == "__main__":
-    main() 
+    main()
