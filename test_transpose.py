@@ -2,13 +2,12 @@ import pytest
 import os 
 from os import path
 from pathlib import Path
-from Transpose import longest_word_and_transpose
 
 #Test file has data
 def test_file_has_words():
 	assert os.path.getsize("Words.txt") > 0
 
-#Test that files has the correct name
+#Test that files has the correct name, looking for Words.txt for these TCs
 def test_file_has_correct_name():
     assert os.path.exists("NotTheCorrectFileName.txt") == 0
 
@@ -18,6 +17,7 @@ def test_file_exits():
 
 #Test that method returns a value
 def test_returns_longest_word_transposed():
+    from Transpose import longest_word_and_transpose
     str = print(longest_word_and_transpose('Words.txt'))
     assert str != ""
 
@@ -36,7 +36,8 @@ def test_file_has_txt_extension():
 def test_file_is_accessible():
     assert os.access("Words.txt", os.R_OK)
 
-#Test file only has alphanumeric characters
+#Test file only has alphanumeric charactersß
 def test_only_has_alphanumeric_characters():    
+    from Transpose import longest_word_and_transpose
     str1 = longest_word_and_transpose("Words.txt")
     assert str1.isalnum()
