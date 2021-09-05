@@ -24,12 +24,12 @@ def longest_word_and_transpose(filename):
       return str_transposed
    except Exception as e:
       print(e)
-      print("Invalid file format, please make sure to pass a valid text file")
+      print("Invalid file format, please make sure to pass as a parameter a valid text file")
 
 
 def main():
    if len(sys.argv) < 2 or os.path.exists(sys.argv[1]) == 0:
-      print("Text File does not exist") 
+      print("Please provide a valid/existing text file as a parameter. i.e. $python3 Transpose.py <filename.txt>") 
       exit(0)
 
    elif os.path.getsize(sys.argv[1]) <= 0:
