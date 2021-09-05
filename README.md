@@ -98,7 +98,9 @@ Note: Make sure that before running any of these commands you are located in the
 1. Run the Coding Challenge by running this command in the command line:
 	
 	``$python3 Transpose.py Words.txt``
+	
 	The script will take any text file as an argument; therefore, if users want to run their own file, they only need to pass it as a parameter in the command line, like this:
+	
 	``$python3 Transpose.py <your_own_text_file_name>.txt``
 	
 2. Once the application has been verified that it's providing the correct result, run the test cases by running this command in the command line:
