@@ -5,9 +5,9 @@ QA Automation Engineer Coding Challenge
 
 **2) TECHNOLOGY AND OTHER TOOLS**
 
-**3) DETAILS ON TECHNOLOGY USED FOR THIS APPLICATION**
+**3) RECOMMENDATIONS**
 
-**4) RECOMMENDATIONS**
+**4) SET UP ENVIRONMENT TO RUN SCRIPTS**
 
 **5) HOW TO RUN AND COMPILE JAVA CLASS AND TEST CLASS**
 
@@ -34,12 +34,28 @@ In order to run this application, the user needs:
 
 =====================================================
 
-**3) DETAILS ON TECHNOLOGY USED FOR THIS APPLICATION**
+**3) RECOMMENDATIONS**
 
-This is a list of tools that a user needs to run the test cases on the machine. It also provides where to find them and how to check if they have been installed on your machine.
-1. Python 3 
+For simplicity purposes, the coding challenge and its test cases have been designed to be run by having all the files in the same folder. Therefore, please extract files from git repository and store them in a single folder.
+For example, if the user wishes to extract the files in the Desktop, the user should see something like this once this is done:
 
-Note: In case the user does not have Python installed please follow the steps provided on this site to download and install: 
+/Users/<user_name>/Desktop/<folder_created_by_user>/Words.txt
+	
+/Users/<user_name>/Desktop/<folder_created_by_user>/Transpose.py
+	
+/Users/<user_name>/Desktop/<folder_created_by_user>/test_transpose.py
+
+/Users/<user_name>/Desktop/<folder_created_by_user>/requirements.txt
+
+=====================================================
+
+**4) SET UP ENVIRONMENT TO RUN SCRIPTS**
+
+Note: This coding challenge was created using a macOS environment. This provides simplicity to the coding challenge since the user can run the coding challenge and its test cases from the terminal. No need for an IDE or any other platform (e.g. Visual Studio Code). 
+
+In order to run this coding challenge, the user needs Python 3.
+
+In case the user does not have Python installed please follow the steps provided on this site to download and install: 
 https://docs.python-guide.org/starting/install3/osx/
 
 Note: To check if Python has been installed, please run this command.
@@ -50,40 +66,24 @@ If  it's installed, the user will see a similar output to this:
 The user should see a similar output like this:
 	
 	$ Python 3.9.5 (User might have a different version, as long as it is Python 3 the coding challenge should work) 
-
-2. pytest testing framework
-
-Note: In case the user do not have the pytest testing framework installed please follow the steps provided on this site to download and install: 
-https://docs.pytest.org/en/stable/getting-started.html
-
-Note: To check if Python has been installed, please run this command.
-If  it's installed, the user will see a similar output to this:
-
-	$ pytest --version 
 	
-The user should see a similar output like this:
-	
-	$ pytest 6.2.4 (User might have a different version) 
+After the user has verified that has Python 3 on the machine, please follow these instructions:
 
-3. MacOS terminal
-Note: This coding challenge was created using a macOS environment. This provides simplicity to the coding challenge since the user can run the coding challenge and its test cases from the terminal. No need for an IDE or any other platform (e.g. Visual Studio Code). 
+1) Create an environment by running this command in the terminal:
 
-NOTE: If the user has experience using Python and pytest, the user can find different ways to install this technology. 
-For example, pytest can be easily installed by running this command "pip install pytest" in the command line. 
-Please keep in mind that these details were created to provide the most basic recommendations to install the required technology.
+		python3 -m venv venv
 
-=====================================================
+2) Activate the environment by running this command in the terminal:
 
-**4) RECOMMENDATIONS**
+		source venv/bin/activate
 
-For simplicity purposes, the coding challenge and its test cases have been designed to be run by having all the files in the same folder. Therefore, please extract files from git repository and store them in a single folder.
-For example, if the user wishes to extract the files in the Desktop, the user should see something like this once this is done:
+3) Install the requirements file provided in the repository
 
-/Users/<user_name>/Desktop/<folder_created_by_user>/Words.txt
-	
-/Users/<user_name>/Desktop/<folder_created_by_user>/Transpose.py
-	
-/Users/<user_name>/Desktop/<folder_created_by_user>/test_transpose.py
+		pip install -r requirements.txt
+
+This command will setup all the dependencies needed to run the scripts including pytest. Once this is done, the user should be ready to run and test the coding challenge.
+
+Optional: The user might see a warning stating that the environment has an old version of pip. Run the provided suggestion by the system to update pip in case you want this warning to not be prompted again.
 	
 =====================================================
 
@@ -122,5 +122,5 @@ NOTE: For simplicity purposes, I did not use any tool or framework other than th
 * In case the user wants to run this coding challenge in Windows, the steps should be very similar as the ones provided above:
   1) Install Python by following the steps provided on this site: https://www.python.org/downloads/windows/
   2) Install pytest by following the steps provided on this site: https://docs.pytest.org/en/stable/getting-started.html
-  3) Download all the files provided in the same directory as instructed in Step 4
-  4) Running the coding challenge and the test cases should be very similar using the same commands as provided in Step 5, the only difference would using the command prompt terminal for Windows.
+  3) Download all the files provided in the same directory as instructed in Step 5
+  4) Running the coding challenge and the test cases should be very similar using the same commands as provided in Step 6, the only difference would using the command prompt terminal for Windows.
