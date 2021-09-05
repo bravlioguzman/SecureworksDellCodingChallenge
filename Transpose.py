@@ -10,7 +10,7 @@ if os.path.exists("Words.txt") == 0:
     print("File \"Words.txt\" does not exist")
     exit()
 elif os.path.getsize("Words.txt") <= 0:
-    print("Please add words to the file")
+    print("Looks like file is empty. Please add words to the file")
     exit()
 else:    
     my_file = open("Words.txt", "r", encoding="utf-8")
