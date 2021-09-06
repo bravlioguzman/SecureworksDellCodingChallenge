@@ -1,6 +1,7 @@
 import pytest
 import os 
 from os import path
+from string import printable
 from pathlib import Path
 
 #Test file has data
@@ -41,8 +42,8 @@ def test_alphanumeric_or_special_chars():
     from Transpose import longest_word_and_transpose
     text = longest_word_and_transpose("Words.txt")
     if set(text).difference(printable):
-        print('Text has special characters.')
+        print("Text file has special characters.")
         assert not text.isalnum()
     else:
-        print("Text hasn't special characters.")
+        print("Text file does not have special characters.")
         assert text.isalnum()
