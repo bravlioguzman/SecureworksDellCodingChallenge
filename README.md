@@ -125,6 +125,9 @@ NOTE: For simplicity purposes, I did not use any tool or framework other than th
 * There is one specific test case that checks the size of the file. Since the requirements do not specify the size, the assumption is that the file is no bigger than 1 gigabyte.
 * There is one specific test case that checks the extension of the file. Since the requirements do not specify the file extension, the assumption is that the file will be a simple text file.
 * There is one specific test case which checks specifically for the string returned to only have letters and/or numbers. Since the requirements did not specify what type of characters the text file should have, there is an assumption done that the file would only have alphanumeric characters.
+* Even though there was an assumption made that the test text file would only contain alphanumeric characters, there is one specific test case that checks whether the returned string has special characters or not. A print of a string was provided and the user can see it by running this command:
+	``$pytest -s test_transpose.py``
+The -s (switch) will provide a standard output (not in a pretty way), but it will print a message stating if the string has only alphanumeric characters or if it has special characters along with the longest word transposed as many times as the method for transposing the longest string was called in the test file.
 * If there are 2 or more words that have the same length and have been identified as the largest words within the file, the application will return the FIRST word identified as the longest word in the file. 
 * In case the user wants to run this coding challenge in Windows, the steps should be very similar as the ones provided above:
   1) Install Python by following the steps provided on this site: https://www.python.org/downloads/windows/
