@@ -36,8 +36,8 @@ In order to run this application, the user needs:
 
 **3) RECOMMENDATIONS**
 
-For simplicity purposes, the coding challenge and its test cases have been designed to be run by having all the files in the same folder. Therefore, please extract files (clone) from git repository and store them in a single folder.
-For example, if the user wishes to extract the files in the Desktop, the user should see something like this:
+For simplicity purposes, the coding challenge and its test cases have been designed to be run by extracting all the files in the same folder. Therefore, please extract files (clone) from git repository and store them in a single folder.
+For example, if the user wishes to extract the files in a folder created in the Desktop, the user should see something like this:
 
 /Users/<user_name>/Desktop/<folder_created_by_user>/Words.txt
 	
