@@ -36,8 +36,13 @@ def test_file_has_txt_extension():
 def test_file_is_accessible():
     assert os.access("Words.txt", os.R_OK)
 
-#Test file only has alphanumeric charactersß
-def test_only_has_alphanumeric_characters():    
+#Test alphanumeric or special chars
+def test_alphanumeric_or_special_chars():
     from Transpose import longest_word_and_transpose
-    str1 = longest_word_and_transpose("Words.txt")
-    assert str1.isalnum()
+    text = longest_word_and_transpose("Words.txt")
+    if set(text).difference(printable):
+        print('Text has special characters.')
+        assert not text.isalnum()
+    else:
+        print("Text hasn't special characters.")
+        assert text.isalnum()
