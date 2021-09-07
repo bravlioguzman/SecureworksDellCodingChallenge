@@ -16,12 +16,15 @@ def longest_word_and_transpose(filename):
       my_file = open(filename, "r", encoding="utf-8")
       my_string = [y for x in my_file.readlines() for y in x.split()]
       longest = reduce(lambda x, y: y if len(x) < len(y) else x, my_string, "")
-      print("Longest word is " + longest +  " and it contains " + str(len(longest)) + " characters")
-      str_transposed = str(longest)[::-1]
-      print(" ")
-      print("The longest word transposed: " + str_transposed)
-      my_file.close()
-      return str_transposed
+      if len(longest) == 0:
+         print("Looks like the file does not have any characters")
+      else:
+         print("Longest word is " + longest +  " and it contains " + str(len(longest)) + " characters")
+         str_transposed = str(longest)[::-1]
+         print(" ")
+         print("The longest word transposed: " + str_transposed)
+         my_file.close()
+         return str_transposed
    except Exception as e:
       print(e)
       print("Invalid file format, please make sure to pass as a parameter a valid text file")
@@ -39,9 +42,9 @@ def main():
    elif Path(sys.argv[1]).suffix != '.txt':
       print("The file must be a text file. Example \"filename.txt\"")
       exit(0)
-
    else:
-      longest_word_and_transpose(sys.argv[1])
+      my_str = longest_word_and_transpose(sys.argv[1])
+      
 
 if __name__ == "__main__":
     main() 
